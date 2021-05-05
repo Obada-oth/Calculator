@@ -9,25 +9,47 @@ import XCTest
 @testable import Calculator
 
 class CalculatorTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var calculations: Calculations!
+    override func setUp() {
+        super.setUp()
+        calculations = Calculations()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+     calculations = nil
+     super.tearDown()
+
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func test_addition_operation()  {
+        XCTAssertEqual(calculations.addition(enteredValue: 1, secondValue: 1), 2)
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
+    
+    func test_subtraction_operation()  {
+        XCTAssertEqual(calculations.subtraction(enteredValue: 5, secondValue: 1), 4)
+
+    }
+    
+    func test_multiplication_operation()  {
+        XCTAssertEqual(calculations.multiplication(enteredValue: 6, secondValue: 6), 36)
+
+    }
+    
+    func test_division_operation()  {
+        XCTAssertEqual(calculations.division(enteredValue: 9, secondValue: 3), 3)
+
+    }
+    
+    func test_percentage_operation()  {
+        XCTAssertEqual(calculations.percentage(secondValue: 15), 0.15)
+
+    }
+    
+    func test_change_sign_operation()  {
+        XCTAssertEqual(calculations.changeSign(secondValue: 20), -20)
+
+    }
+    
 
 }

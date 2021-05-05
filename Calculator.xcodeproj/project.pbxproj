@@ -13,6 +13,7 @@
 		AF2BD6342636ADC300C8D39B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2BD6332636ADC300C8D39B /* Preview Assets.xcassets */; };
 		AF2BD63F2636ADC300C8D39B /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BD63E2636ADC300C8D39B /* CalculatorTests.swift */; };
 		AF2BD64A2636ADC300C8D39B /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BD6492636ADC300C8D39B /* CalculatorUITests.swift */; };
+		AFD3F7EC2642CD0300AEDEC2 /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3F7EB2642CD0300AEDEC2 /* Calculations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		AF2BD6452636ADC300C8D39B /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2BD6492636ADC300C8D39B /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		AF2BD64B2636ADC300C8D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD3F7EB2642CD0300AEDEC2 /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				AF2BD62C2636ADC000C8D39B /* CalculatorApp.swift */,
 				AF2BD62E2636ADC000C8D39B /* ContentView.swift */,
+				AFD3F7EB2642CD0300AEDEC2 /* Calculations.swift */,
 				AF2BD6302636ADC300C8D39B /* Assets.xcassets */,
 				AF2BD6352636ADC300C8D39B /* Info.plist */,
 				AF2BD6322636ADC300C8D39B /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				AF2BD62F2636ADC000C8D39B /* ContentView.swift in Sources */,
 				AF2BD62D2636ADC000C8D39B /* CalculatorApp.swift in Sources */,
+				AFD3F7EC2642CD0300AEDEC2 /* Calculations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63GWW9MNF2;
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,7 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63GWW9MNF2;
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
